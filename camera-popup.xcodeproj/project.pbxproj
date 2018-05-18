@@ -20,6 +20,14 @@
 		FBF8ED6220AF303B00DECF93 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6120AF303B00DECF93 /* CameraViewController.swift */; };
 		FBF8ED6420AF30DB00DECF93 /* FocusIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6320AF30DB00DECF93 /* FocusIndicatorView.swift */; };
 		FBF8ED6620AF318F00DECF93 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF8ED6520AF318F00DECF93 /* CameraViewController.xib */; };
+		FBF8ED6D20AF324E00DECF93 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6820AF324E00DECF93 /* SwiftyCamButton.swift */; };
+		FBF8ED6E20AF324E00DECF93 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6920AF324E00DECF93 /* PreviewView.swift */; };
+		FBF8ED6F20AF324E00DECF93 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6A20AF324E00DECF93 /* SwiftyCamViewController.swift */; };
+		FBF8ED7020AF324E00DECF93 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6B20AF324E00DECF93 /* SwiftyCamViewControllerDelegate.swift */; };
+		FBF8ED7120AF324E00DECF93 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED6C20AF324E00DECF93 /* Orientation.swift */; };
+		FBF8ED7520AF32EA00DECF93 /* SCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */; };
+		FBF8ED7720AF335000DECF93 /* SCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED7620AF335000DECF93 /* SCViewController.swift */; };
+		FBF8ED7920AF34D900DECF93 /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,14 @@
 		FBF8ED6120AF303B00DECF93 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FBF8ED6320AF30DB00DECF93 /* FocusIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusIndicatorView.swift; sourceTree = "<group>"; };
 		FBF8ED6520AF318F00DECF93 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		FBF8ED6820AF324E00DECF93 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamButton.swift; sourceTree = "<group>"; };
+		FBF8ED6920AF324E00DECF93 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		FBF8ED6A20AF324E00DECF93 /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewController.swift; sourceTree = "<group>"; };
+		FBF8ED6B20AF324E00DECF93 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FBF8ED6C20AF324E00DECF93 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCViewController.xib; sourceTree = "<group>"; };
+		FBF8ED7620AF335000DECF93 /* SCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCViewController.swift; sourceTree = "<group>"; };
+		FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
 		FE9FC85D34A1CE72B9E97FC2 /* Pods_camera_popupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera_popupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +164,7 @@
 				FB38FBDD20AF1AC100C53479 /* Views */,
 				FB38FBB520AF1A1900C53479 /* Assets.xcassets */,
 				FB38FBDC20AF1AAE00C53479 /* Supporting Files */,
+				FBF8ED6720AF324E00DECF93 /* SwiftyCam */,
 			);
 			path = "camera-popup";
 			sourceTree = "<group>";
@@ -184,7 +201,9 @@
 			children = (
 				FB38FBB220AF1A1700C53479 /* Main.storyboard */,
 				FBF8ED6520AF318F00DECF93 /* CameraViewController.xib */,
+				FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */,
 				FBF8ED6320AF30DB00DECF93 /* FocusIndicatorView.swift */,
+				FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +213,23 @@
 			children = (
 				FB38FBB020AF1A1700C53479 /* ViewController.swift */,
 				FBF8ED6120AF303B00DECF93 /* CameraViewController.swift */,
+				FBF8ED7620AF335000DECF93 /* SCViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
+		};
+		FBF8ED6720AF324E00DECF93 /* SwiftyCam */ = {
+			isa = PBXGroup;
+			children = (
+				FBF8ED6820AF324E00DECF93 /* SwiftyCamButton.swift */,
+				FBF8ED6920AF324E00DECF93 /* PreviewView.swift */,
+				FBF8ED6A20AF324E00DECF93 /* SwiftyCamViewController.swift */,
+				FBF8ED6B20AF324E00DECF93 /* SwiftyCamViewControllerDelegate.swift */,
+				FBF8ED6C20AF324E00DECF93 /* Orientation.swift */,
+			);
+			name = SwiftyCam;
+			path = "camera-popup/SwiftyCam";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -307,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB38FBB920AF1A1900C53479 /* LaunchScreen.storyboard in Resources */,
+				FBF8ED7520AF32EA00DECF93 /* SCViewController.xib in Resources */,
 				FBF8ED6620AF318F00DECF93 /* CameraViewController.xib in Resources */,
 				FB38FBB620AF1A1900C53479 /* Assets.xcassets in Resources */,
 				FB38FBB420AF1A1700C53479 /* Main.storyboard in Resources */,
@@ -414,9 +448,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB38FBB120AF1A1700C53479 /* ViewController.swift in Sources */,
+				FBF8ED7020AF324E00DECF93 /* SwiftyCamViewControllerDelegate.swift in Sources */,
+				FBF8ED7720AF335000DECF93 /* SCViewController.swift in Sources */,
 				FB38FBAF20AF1A1700C53479 /* AppDelegate.swift in Sources */,
+				FBF8ED6F20AF324E00DECF93 /* SwiftyCamViewController.swift in Sources */,
 				FBF8ED6220AF303B00DECF93 /* CameraViewController.swift in Sources */,
+				FBF8ED6D20AF324E00DECF93 /* SwiftyCamButton.swift in Sources */,
 				FBF8ED6420AF30DB00DECF93 /* FocusIndicatorView.swift in Sources */,
+				FBF8ED7120AF324E00DECF93 /* Orientation.swift in Sources */,
+				FBF8ED7920AF34D900DECF93 /* SwiftyRecordButton.swift in Sources */,
+				FBF8ED6E20AF324E00DECF93 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

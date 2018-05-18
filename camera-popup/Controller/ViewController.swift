@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressedSwiftyCam(_ sender: UIButton) {
-        print("Pressed Swifty")
+        showSCCameraDialog()
     }
     
     func showNormalDialog(animated: Bool = true) {
@@ -84,6 +84,31 @@ class ViewController: UIViewController {
         present(popup, animated: animated, completion: nil)
         
     }
+    
+    func showSCCameraDialog(animated: Bool = true) {
+        
+        // Create a camera view controller
+        
+        let cameraVC = SCViewController(nibName: "SCViewController", bundle: nil)
+        
+        
+        // Create the dialog
+        let popup = PopupDialog(viewController: cameraVC, buttonAlignment: .horizontal, transitionStyle: .bounceDown, gestureDismissal: true)
+        
+        // Create first button
+        let buttonOne = CancelButton(title: "Cancel", height: 60) {
+            print("You pressed cancel")
+        }
+        buttonOne.layer.zPosition = 1
+        
+        // Add buttons to dialog
+        popup.addButtons([buttonOne])
+        
+        // Present dialog
+        present(popup, animated: animated, completion: nil)
+        
+    }
+    
     
 }
 
