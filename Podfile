@@ -8,7 +8,7 @@ target 'camera-popup' do
   # Pods for camera-popup
   pod "PopupDialog"
   pod "NextLevel", "~> 0.9.5"
-  pod "SwiftyCam"
+  # pod "SwiftyCam" # Pod needs support for Swift 4
 
   target 'camera-popupTests' do
     inherit! :search_paths
