@@ -1,0 +1,28 @@
+PODS:
+  - DynamicBlurView (2.0.2)
+  - NextLevel (0.9.5)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - SwiftyCam (2.6.0)
+
+DEPENDENCIES:
+  - NextLevel (~> 0.9.5)
+  - PopupDialog
+  - SwiftyCam
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DynamicBlurView
+    - NextLevel
+    - PopupDialog
+    - SwiftyCam
+
+SPEC CHECKSUMS:
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  NextLevel: 5f597ea468d212e738d7232d51cc7aab0cd9f770
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  SwiftyCam: 86c114177a1b1f5dc2c82384577d0c20b922a31b
+
+PODFILE CHECKSUM: 4753d94b206e3a03d674950fe354b87bc641a97e
+
+COCOAPODS: 1.5.0
