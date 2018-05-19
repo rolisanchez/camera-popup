@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLn-1M-agb">
-                    <rect key="frame" x="0.0" y="72" width="385" height="595"/>
+                    <rect key="frame" x="0.0" y="0.0" width="385" height="595"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZJ-Zg-ykf" customClass="SwiftyRecordButton" customModule="camera_popup" customModuleProvider="target">
                             <rect key="frame" x="155" y="510" width="75" height="75"/>
@@ -70,7 +70,7 @@
                 <constraint firstItem="HLn-1M-agb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ADK-RP-yGB"/>
                 <constraint firstItem="HLn-1M-agb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ODB-pg-x3O"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HLn-1M-agb" secondAttribute="trailing" constant="-10" id="jsx-ky-HVR"/>
-                <constraint firstItem="HLn-1M-agb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wLz-E1-bk1"/>
+                <constraint firstItem="HLn-1M-agb" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="wLz-E1-bk1"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>
