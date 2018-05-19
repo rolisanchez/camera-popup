@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         showSCCameraDialog()
     }
     
+    @IBAction func pressesImagePicker(_ sender: UIButton) {
+        showPickerDialog()
+    }
+    
+    
     func showNormalDialog(animated: Bool = true) {
         
         // Prepare the popup
@@ -39,7 +44,7 @@ class ViewController: UIViewController {
                                 message: message,
                                 buttonAlignment: .horizontal,
                                 transitionStyle: .zoomIn,
-                                gestureDismissal: true,
+                                gestureDismissal: false, //false dismissal
                                 hideStatusBar: true) {
                                     print("Completed")
         }
@@ -90,6 +95,29 @@ class ViewController: UIViewController {
         // Create a camera view controller
         
         let cameraVC = SCViewController(nibName: "SCViewController", bundle: nil)
+        
+        
+        // Create the dialog
+        let popup = PopupDialog(viewController: cameraVC, buttonAlignment: .horizontal, transitionStyle: .bounceDown, gestureDismissal: true)
+        
+        // Create first button
+        let buttonOne = CancelButton(title: "Cancel", height: 60) {
+            print("You pressed cancel")
+        }
+        buttonOne.layer.zPosition = 1
+        
+        // Add buttons to dialog
+        popup.addButtons([buttonOne])
+        
+        // Present dialog
+        present(popup, animated: animated, completion: nil)
+        
+    }
+    func showPickerDialog(animated: Bool = true) {
+        
+        // Create a camera view controller
+        
+        let cameraVC = PickerViewController(nibName: "PickerViewController", bundle: nil)
         
         
         // Create the dialog

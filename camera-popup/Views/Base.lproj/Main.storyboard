@@ -47,6 +47,13 @@
                                     <action selector="pressedSwiftyCam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paF-jV-DnA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS3-lm-Kec">
+                                <rect key="frame" x="128" y="322" width="118" height="30"/>
+                                <state key="normal" title="Test ImagePicker"/>
+                                <connections>
+                                    <action selector="pressesImagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqG-oX-ZJ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,7 +63,9 @@
                             <constraint firstItem="2dl-lj-bo4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fbe-rr-Gyv"/>
                             <constraint firstItem="04N-gs-fwn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KXc-ak-oWh"/>
                             <constraint firstItem="D2D-Fc-Jdm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrM-Qe-mUN"/>
+                            <constraint firstItem="CS3-lm-Kec" firstAttribute="top" secondItem="D2D-Fc-Jdm" secondAttribute="bottom" constant="30" id="YM1-nv-8gi"/>
                             <constraint firstItem="2dl-lj-bo4" firstAttribute="top" secondItem="04N-gs-fwn" secondAttribute="bottom" constant="30" id="ZhV-ve-rSJ"/>
+                            <constraint firstItem="CS3-lm-Kec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jJW-10-Jyv"/>
                             <constraint firstItem="VRR-Kq-KPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x64-Dt-uDg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomViewController" customModule="camera_popup" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCViewController" customModule="camera_popup" customModuleProvider="target">
             <connections>
                 <outlet property="captureButton" destination="vZJ-Zg-ykf" id="8h2-or-wJ2"/>
                 <outlet property="flashButton" destination="V5e-hu-d6Q" id="Rmt-gv-xIV"/>
@@ -24,10 +24,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLn-1M-agb">
-                    <rect key="frame" x="0.0" y="0.0" width="365" height="667"/>
+                    <rect key="frame" x="0.0" y="72" width="385" height="595"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZJ-Zg-ykf" customClass="SwiftyRecordButton" customModule="camera_popup" customModuleProvider="target">
-                            <rect key="frame" x="145" y="582" width="75" height="75"/>
+                            <rect key="frame" x="155" y="510" width="75" height="75"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="75" id="AYt-qS-Ogr"/>
@@ -35,26 +35,30 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5e-hu-d6Q">
-                            <rect key="frame" x="270" y="610.5" width="30" height="18"/>
+                            <rect key="frame" x="280" y="538.5" width="30" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="Y1j-Ys-FRY"/>
                                 <constraint firstAttribute="height" constant="18" id="oRh-Ke-Y9N"/>
                             </constraints>
-                            <state key="normal" title="Flash Button" image="flashOutline"/>
+                            <state key="normal" image="flashOutline"/>
+                            <connections>
+                                <action selector="flashTapped:" destination="-1" eventType="touchUpInside" id="C3a-Nk-5Fl"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-Zb-ofe">
-                            <rect key="frame" x="-22" y="608" width="117" height="23"/>
-                            <state key="normal" title="Flip button" image="flipCamera"/>
+                            <rect key="frame" x="75" y="536" width="30" height="23"/>
+                            <state key="normal" image="flipCamera"/>
+                            <connections>
+                                <action selector="switchTapped:" destination="-1" eventType="touchUpInside" id="yy3-4u-Nma"/>
+                            </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="vZJ-Zg-ykf" firstAttribute="centerX" secondItem="HLn-1M-agb" secondAttribute="centerX" id="6Lv-fE-nXL"/>
                         <constraint firstItem="vZJ-Zg-ykf" firstAttribute="leading" secondItem="xX7-Zb-ofe" secondAttribute="trailing" constant="50" id="Hz6-0G-Yg4"/>
-                        <constraint firstAttribute="height" constant="667" id="Ogb-mQ-DVg"/>
+                        <constraint firstAttribute="height" constant="595" id="Ogb-mQ-DVg"/>
                         <constraint firstAttribute="bottom" secondItem="vZJ-Zg-ykf" secondAttribute="bottom" constant="10" id="UHq-XD-HTv"/>
                         <constraint firstItem="vZJ-Zg-ykf" firstAttribute="centerY" secondItem="xX7-Zb-ofe" secondAttribute="centerY" id="dYT-rb-t5B"/>
-                        <constraint firstAttribute="width" constant="365" id="kbo-eu-vGx"/>
                         <constraint firstItem="V5e-hu-d6Q" firstAttribute="centerY" secondItem="vZJ-Zg-ykf" secondAttribute="centerY" id="nE7-bA-drb"/>
                         <constraint firstItem="V5e-hu-d6Q" firstAttribute="leading" secondItem="vZJ-Zg-ykf" secondAttribute="trailing" constant="50" id="nax-A2-Stu"/>
                         <constraint firstItem="V5e-hu-d6Q" firstAttribute="centerY" secondItem="xX7-Zb-ofe" secondAttribute="centerY" id="z0G-LP-EVP"/>
@@ -63,10 +67,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="HLn-1M-agb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="8k9-k4-aLP"/>
-                <constraint firstItem="HLn-1M-agb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="d8d-vy-ug0"/>
-                <constraint firstItem="HLn-1M-agb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dtE-E7-U26"/>
-                <constraint firstItem="HLn-1M-agb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="jtz-YE-b0b"/>
+                <constraint firstItem="HLn-1M-agb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ADK-RP-yGB"/>
+                <constraint firstItem="HLn-1M-agb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ODB-pg-x3O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HLn-1M-agb" secondAttribute="trailing" constant="-10" id="jsx-ky-HVR"/>
+                <constraint firstItem="HLn-1M-agb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wLz-E1-bk1"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>

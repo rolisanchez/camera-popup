@@ -28,6 +28,8 @@
 		FBF8ED7520AF32EA00DECF93 /* SCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */; };
 		FBF8ED7720AF335000DECF93 /* SCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED7620AF335000DECF93 /* SCViewController.swift */; };
 		FBF8ED7920AF34D900DECF93 /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */; };
+		FBF8ED7B20B0209C00DECF93 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF8ED7A20B0209C00DECF93 /* PickerViewController.xib */; };
+		FBF8ED7D20B020A300DECF93 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF8ED7C20B020A300DECF93 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCViewController.xib; sourceTree = "<group>"; };
 		FBF8ED7620AF335000DECF93 /* SCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCViewController.swift; sourceTree = "<group>"; };
 		FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
+		FBF8ED7A20B0209C00DECF93 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		FBF8ED7C20B020A300DECF93 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		FE9FC85D34A1CE72B9E97FC2 /* Pods_camera_popupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera_popupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +208,8 @@
 				FBF8ED7420AF32EA00DECF93 /* SCViewController.xib */,
 				FBF8ED6320AF30DB00DECF93 /* FocusIndicatorView.swift */,
 				FBF8ED7820AF34D900DECF93 /* SwiftyRecordButton.swift */,
+				FBF8ED7A20B0209C00DECF93 /* PickerViewController.xib */,
+				FBF8ED7C20B020A300DECF93 /* PickerViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				FBF8ED7520AF32EA00DECF93 /* SCViewController.xib in Resources */,
 				FBF8ED6620AF318F00DECF93 /* CameraViewController.xib in Resources */,
 				FB38FBB620AF1A1900C53479 /* Assets.xcassets in Resources */,
+				FBF8ED7B20B0209C00DECF93 /* PickerViewController.xib in Resources */,
 				FB38FBB420AF1A1700C53479 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +460,7 @@
 				FB38FBAF20AF1A1700C53479 /* AppDelegate.swift in Sources */,
 				FBF8ED6F20AF324E00DECF93 /* SwiftyCamViewController.swift in Sources */,
 				FBF8ED6220AF303B00DECF93 /* CameraViewController.swift in Sources */,
+				FBF8ED7D20B020A300DECF93 /* PickerViewController.swift in Sources */,
 				FBF8ED6D20AF324E00DECF93 /* SwiftyCamButton.swift in Sources */,
 				FBF8ED6420AF30DB00DECF93 /* FocusIndicatorView.swift in Sources */,
 				FBF8ED7120AF324E00DECF93 /* Orientation.swift in Sources */,
